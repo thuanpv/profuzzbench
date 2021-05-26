@@ -35,7 +35,7 @@ WORKDIR /home/ubuntu
 ENV LLVM_CONFIG="llvm-config-6.0"
 
 # Set up fuzzers
-RUN git clone https://github.com/profuzzbench/aflnet.git && \
+RUN git clone https://github.com/thuanpv/aflnet.git && \
     cd aflnet && \
     make clean all && \
     cd llvm_mode && make
